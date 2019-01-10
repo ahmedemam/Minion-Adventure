@@ -1,0 +1,31 @@
+
+.stopWatch{
+    position: fixed;
+    width: 150px;
+    height: auto;
+    padding: 0 10px;
+    font-weight:bold;
+    background-color:green;
+    color: white;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+body{
+    background: url("../assets/background2.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+#myDynamicTable {
+    width: 350px;
+    margin: auto;
+    position: fixed;
+    left: 37%;
+    border-radius: 3px;
+    padding: 15px 30px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    z-index: 1000;
+    display: none;
+}

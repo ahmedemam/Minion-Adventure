@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="stopWatch">
+        <p id="timer"> Time : 00:00:00 </p>
+        <p> Score : <span id="score">0</span> </p>
+        <p> Life : <span id="lifes">3</span> </p>
+    </div>
+    <div class="winGame" id="winScreen">
+        <h1>GOOD JOB</h1>
+        <p>Your Score is:<span id="Wscore">000</span> </p>
+        <p> Continue to Next level ! </p>
+    </div>
+    <div class="gameOver" id="gameOver">
+        <h1>GAME OVER</h1>
+        <p>Your Score is: <span id="Lscore">000</span></p>
+    </div>
+    <div class="menu" id="MenuShow">
+        <h3>MINION ADVENTURE</h3>
+        <input class="myButton" id="startGame" type="button" value="Start Game"><br>
+        <input class="myButton" id="continuGame" type="button" value="Continue"><br>
+        <input class="myButton" id="playSound" type="button" value="Play/Mute Sound"><br>
+        <input class="myButton" id="exitButton" type="button" value="Exit"><br>
+    </div>
+    <div class="charachters" id="char_menu">
+        <p>CHOOSE YOUR HERO</p>
+        <div class="hero">
+            <img id="hero1" alt="char1" src="assets/hero1.png">
+            <img id="hero2" alt="char2" src="assets/hero2.png">
+        </div>
+    </div>
+    <div class="map">
+        <img class="circle" src="assets/gray.png" width='30' height='30' alt="circle">
+        <img class="circle" src="assets/gray.png" width='30' alt="circle" height='30'>
+        <img class="circle" src="assets/gray.png" width='30' height='30' alt="circle">
+    </div>
+    <div id="myDynamicTable">
+        <table id="players"></table>
+    </div>
+    <script type="module" src="js/menu.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

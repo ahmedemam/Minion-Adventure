@@ -1,0 +1,29 @@
+.winGame,
+.gameOver {
+    width: 300px;
+    position: fixed;
+    border-radius: 5px;
+    padding: 40px 0 40px 50px;
+    left: 37%;
+    display: none;
+}
+
+.winGame {
+    background: linear-gradient(transparent, green);
+    border: 3px solid green;
+
+}
+
+.winGame p,
+.winGame h1,
+.gameOver p,
+.gameOver h1 {
+    padding: 3px;
+    margin: 0;
+}
+
+.gameOver {
+    display: none;
+    background: linear-gradient(transparent, darkred);
+    border: 3px solid darkred;
+}

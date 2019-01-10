@@ -1,0 +1,132 @@
+html,body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.world {
+    background: linear-gradient(rgb(64, 180, 219), rgb(161, 214, 231));
+    height: 630px;
+    width: 3000px;
+}
+
+.world #cloud {
+    width: 100%;
+    height: 135px;
+    background-image: url('../assets/clouds_2.png'), url('../assets/clouds_1.png'), url('../assets/clouds_3.png');
+    background-size: contain;
+    background-repeat: repeat-x, no-repeat, repeat-x;
+    position: relative;
+    animation: linear infinite alternate-reverse;
+    animation-name: example;
+    animation-duration: 60s;
+}
+#minion{
+    position: absolute;
+    z-index: 10000;
+}
+
+/* Safari 4.0 - 8.0 */
+@keyframes example {
+    0% {
+        left: 50%;
+    }
+
+    10% {
+        left: 25%;
+    }
+
+    20% {
+        left: 5%;
+    }
+
+    30% {
+        left: 25%;
+    }
+
+    40% {
+        left: 50%;
+    }
+
+    50% {
+        left: 75%;
+    }
+
+    60% {
+        left: 95%;
+    }
+
+    70% {
+        left: 75%;
+    }
+
+    90% {
+        left: 95%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+/* Standard syntax */
+@keyframes example {
+    0% {
+        left: -100%;
+    }
+
+    10% {
+        left: -75%;
+    }
+
+    20% {
+        left: -50%;
+    }
+
+    30% {
+        left: -25%;
+    }
+
+    40% {
+        left: 0%;
+    }
+
+    50% {
+        left: 25%;
+    }
+
+    60% {
+        left: 50%;
+    }
+
+    70% {
+        left: 75%;
+    }
+
+    90% {
+        left: 95%;
+    }
+
+    100% {
+        left: 200%;
+    }
+}
+
+
+.world #mountain {
+    width: 100%;
+    position: relative;
+    top: 10%;
+    height: 60%;
+    background-image: url('../assets/rocks_1.png'), url('../assets/rocks_2.png'), url('../assets/rocks_3.png');
+    background-repeat: repeat-x, repeat-x, repeat-x;
+}
+
+.world #pines {
+    width: 100%;
+    height: 127px;
+    position: relative;
+    top: -15%;
+    background-image: url('../assets/pines.png');
+    background-repeat: repeat-x;
+}

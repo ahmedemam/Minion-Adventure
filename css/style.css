@@ -1,0 +1,300 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.world {
+    background: linear-gradient(rgb(64, 180, 219), rgb(161, 214, 231));
+    height: 630px;
+    width: 3000px;
+}
+
+.world #cloud {
+    width: 100%;
+    height: 135px;
+    background-image: url('../assets/clouds_2.png'), url('../assets/clouds_1.png'), url('../assets/clouds_3.png');
+    background-size: contain;
+    background-repeat: repeat-x, no-repeat, repeat-x;
+    position: relative;
+    animation: linear infinite alternate-reverse;
+    animation-name: example;
+    animation-duration: 60s;
+}
+
+#minion {
+    position: absolute;
+    z-index: 10000;
+}
+
+/* Safari 4.0 - 8.0 */
+@keyframes example {
+    0% {
+        left: 50%;
+    }
+
+    10% {
+        left: 25%;
+    }
+
+    20% {
+        left: 5%;
+    }
+
+    30% {
+        left: 25%;
+    }
+
+    40% {
+        left: 50%;
+    }
+
+    50% {
+        left: 75%;
+    }
+
+    60% {
+        left: 95%;
+    }
+
+    70% {
+        left: 75%;
+    }
+
+    90% {
+        left: 95%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+/* Standard syntax */
+@keyframes example {
+    0% {
+        left: -100%;
+    }
+
+    10% {
+        left: -75%;
+    }
+
+    20% {
+        left: -50%;
+    }
+
+    30% {
+        left: -25%;
+    }
+
+    40% {
+        left: 0%;
+    }
+
+    50% {
+        left: 25%;
+    }
+
+    60% {
+        left: 50%;
+    }
+
+    70% {
+        left: 75%;
+    }
+
+    90% {
+        left: 95%;
+    }
+
+    100% {
+        left: 200%;
+    }
+}
+
+
+.world #mountain {
+    width: 100%;
+    position: relative;
+    top: 10%;
+    height: 60%;
+    background-image: url('../assets/rocks_1.png'), url('../assets/rocks_2.png'), url('../assets/rocks_3.png');
+    background-repeat: repeat-x, repeat-x, repeat-x;
+}
+
+.world #pines {
+    width: 100%;
+    height: 127px;
+    position: relative;
+    top: -15%;
+    background-image: url('../assets/pines.png');
+    background-repeat: repeat-x;
+}
+
+.stopWatch {
+    position: fixed;
+    width: 150px;
+    height: auto;
+    padding: 0 10px;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+body {
+    background: url("../assets/background2.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+#myDynamicTable {
+    width: 350px;
+    margin: auto;
+    position: fixed;
+    left: 37%;
+    border-radius: 3px;
+    padding: 15px 30px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    z-index: 1000;
+    display: none;
+}
+
+.menu {
+    width: 250px;
+    margin: auto;
+    position: fixed;
+    left: 37%;
+    border-radius: 3px;
+    padding: 15px 30px;
+    /* background: linear-gradient(transparent, rgb(7, 103, 228)); */
+    background: linear-gradient(transparent, rgb(7, 103, 228));
+    z-index: 1000;
+}
+
+.myButton {
+    margin: 3px;
+    -moz-box-shadow: inset 0px 1px 0px 0px #fff6af;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #fff6af;
+    box-shadow: inset 0px 1px 0px 0px #fff6af;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+    background: -moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color: #ffec64;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #ffaa22;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffee66;
+}
+
+.myButton:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+    background: -moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    background-color: #ffab23;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.charachters {
+    position: fixed;
+    top: 10%;
+    right: 0;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    left: 45%;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 18px;
+
+}
+
+.charachters .hero #hero1 {
+    margin-left: 18%;
+}
+
+.charachters .hero #hero1,
+.charachters .hero #hero2 {
+    padding: 1px 3px;
+    border-radius: 5px;
+    border: 2px solid;
+}
+
+.charachters .hero #hero1:hover,
+.charachters .hero #hero2:hover {
+    border: 2px solid steelblue;
+    cursor: pointer;
+}
+
+/********************************* */
+.map {
+    z-index: 10000;
+    border: 2px solid darkgray;
+    width: 60px;
+    padding: 3px 2px 2px 3px;
+    border-radius: 5px;
+    position: fixed;
+}
+
+.map .circle {
+    position: relative;
+    margin-top: 2px;
+}
+
+.map img.circle {
+    width: 15px;
+    height: 15px;
+}
+
+.winGame,
+.gameOver {
+    width: 300px;
+    position: fixed;
+    border-radius: 5px;
+    padding: 40px 0 40px 50px;
+    left: 37%;
+    display: none;
+}
+
+.winGame {
+    background: linear-gradient(transparent, green);
+    border: 3px solid green;
+
+}
+
+.winGame p,
+.winGame h1,
+.gameOver p,
+.gameOver h1 {
+    padding: 3px;
+    margin: 0;
+}
+
+.gameOver {
+    display: none;
+    background: linear-gradient(transparent, darkred);
+    border: 3px solid darkred;
+}
