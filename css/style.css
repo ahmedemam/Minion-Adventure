@@ -6,6 +6,9 @@ body {
 }
 
 .world {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(64, 180, 219)), to(rgb(161, 214, 231)));
+    background: -webkit-linear-gradient(rgb(64, 180, 219), rgb(161, 214, 231));
+    background: -o-linear-gradient(rgb(64, 180, 219), rgb(161, 214, 231));
     background: linear-gradient(rgb(64, 180, 219), rgb(161, 214, 231));
     height: 630px;
     width: 3000px;
@@ -19,7 +22,9 @@ body {
     background-repeat: repeat-x, no-repeat, repeat-x;
     position: relative;
     animation: linear infinite alternate-reverse;
+    -webkit-animation-name: example;
     animation-name: example;
+    -webkit-animation-duration: 60s;
     animation-duration: 60s;
 }
 
@@ -29,6 +34,48 @@ body {
 }
 
 /* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0% {
+        left: 50%;
+    }
+
+    10% {
+        left: 25%;
+    }
+
+    20% {
+        left: 5%;
+    }
+
+    30% {
+        left: 25%;
+    }
+
+    40% {
+        left: 50%;
+    }
+
+    50% {
+        left: 75%;
+    }
+
+    60% {
+        left: 95%;
+    }
+
+    70% {
+        left: 75%;
+    }
+
+    90% {
+        left: 95%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
 @keyframes example {
     0% {
         left: 50%;
@@ -173,23 +220,23 @@ body {
     border-radius: 3px;
     padding: 15px 30px;
     /* background: linear-gradient(transparent, rgb(7, 103, 228)); */
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgb(7, 103, 228)));
+    background: -webkit-linear-gradient(transparent, rgb(7, 103, 228));
+    background: -o-linear-gradient(transparent, rgb(7, 103, 228));
     background: linear-gradient(transparent, rgb(7, 103, 228));
     z-index: 1000;
 }
 
 .myButton {
     margin: 3px;
-    -moz-box-shadow: inset 0px 1px 0px 0px #fff6af;
     -webkit-box-shadow: inset 0px 1px 0px 0px #fff6af;
     box-shadow: inset 0px 1px 0px 0px #fff6af;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
-    background: -moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
     background: -webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
     background: -o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ffec64), to(#ffab23));
     background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
     background-color: #ffec64;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
     border-radius: 6px;
     border: 1px solid #ffaa22;
     display: inline-block;
@@ -205,9 +252,9 @@ body {
 
 .myButton:hover {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
-    background: -moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
     background: -webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
     background: -o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #ffab23), to(#ffec64));
     background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
     background-color: #ffab23;
 }
@@ -280,6 +327,9 @@ body {
 }
 
 .winGame {
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(green));
+    background: -webkit-linear-gradient(transparent, green);
+    background: -o-linear-gradient(transparent, green);
     background: linear-gradient(transparent, green);
     border: 3px solid green;
 
@@ -295,6 +345,9 @@ body {
 
 .gameOver {
     display: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(darkred));
+    background: -webkit-linear-gradient(transparent, darkred);
+    background: -o-linear-gradient(transparent, darkred);
     background: linear-gradient(transparent, darkred);
     border: 3px solid darkred;
 }
